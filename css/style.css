@@ -203,10 +203,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-a {
-  text-decoration: none;
-}
-
 .product .gallery {
   display: flex;
   flex-wrap: wrap;
