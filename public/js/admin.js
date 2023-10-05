@@ -142,7 +142,7 @@ function deleteButtonClick(postId) {
         .then((response) => response.json())
         .then((data) => {
         // Navigate ke /admin/data
-        window.location.href = 'https://https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/data.html';
+        window.location.href = 'https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/data.html';
         alert('Data berhasil dihapus');
         })
         .catch((error) => {
