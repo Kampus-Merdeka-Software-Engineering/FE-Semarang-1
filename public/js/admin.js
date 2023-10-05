@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const tableBody = document.getElementById('table-body-data');
   if (!token) {
         // Token not found, balik ke halaman login
-        window.location.href = 'https://https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/login.html';
+        window.location.href = 'https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/login.html';
     } else {
     fetch(`${hostUrl}/api/admin/data/`, {
       method: 'GET',
