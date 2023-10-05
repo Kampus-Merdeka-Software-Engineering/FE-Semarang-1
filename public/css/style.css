@@ -373,6 +373,16 @@ body {
   color: #fff;
 }
 
+.login a:hover {
+  color: #1a1101;
+}
+
+.login a {
+  color: #000000;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
 /* Media Queries */
 
 /* Laptop */
