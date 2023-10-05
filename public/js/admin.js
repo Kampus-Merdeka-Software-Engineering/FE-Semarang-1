@@ -123,7 +123,7 @@ function submitEditButtonClick(postId, event) {
         .then((data) => {
         // console.log('Data updated:', data);
         // Navigate ke seluruh data setelah berhasil update
-        window.location.href = 'https://https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/data.html';
+        window.location.href = 'https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/data.html';
         })
         .catch((error) => {
         console.error('Error updating data:', error);
