@@ -55,7 +55,7 @@ btn.addEventListener('click', () => {
             console.error('Error sending data to the server:', error);
           });
       }
-      window.location.href = "https://https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/";
+      window.location.href = "https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/";
   });
   }
 });
