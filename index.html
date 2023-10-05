@@ -16,8 +16,11 @@
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- Include SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+
     <!-- My Style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
     <!-- Navbar start -->
@@ -67,7 +70,7 @@
 
       <div class="row">
         <div class="about-img">
-          <img src="Assets/img/about-us.jpg" alt="About Us" />
+          <img src="./public/img/about-us.jpg" alt="About Us" />
         </div>
         <div class="content">
           <h3>Why choose our furniture?</h3>
@@ -87,25 +90,25 @@
       <div class="gallery">
   
         <div class="content">
-          <img src="Assets/img/product/product 1.png">
+          <img src="./public/img/product/product 1.png">
           <h3>ZERO</h3>
           <p>lounge chair for indoors</p>
         </div>
   
         <div class="content">
-          <img src="Assets/img/product/product 2.png">
+          <img src="./public/img/product/product 2.png">
           <h3>ATTAYA</h3>
           <p>2 in 1 bookshelf and desk</p>
         </div>
   
         <div class="content">
-          <img src="Assets/img/product/product 3.png">
+          <img src="./public/img/product/product 3.png">
           <h3>TROPICANA</h3>
           <p>chair and table set patterned</p>
         </div>
   
         <div class="content">
-          <img src="Assets/img/product/product 4.png">
+          <img src="./public/img/product/product 4.png">
           <h3>FLEX DESK</h3>
           <p>desk with adjustable height</p>
         </div>
@@ -136,7 +139,7 @@
             <p>info@ideku.com</p>
           </div>
 
-          <form action="" method="post" autocomplete="off">
+          <form autocomplete="off">
             <div class="input-group" >
               <i data-feather="user"></i>
               <input type="text" id="input-name" 
@@ -151,7 +154,7 @@
                <textarea rows="5" id="input-message"
                 placeholder="Message" required></textarea>
             </div>
-            <button type="submit" 
+            <button type="button"
             class="btn" id="btn">Send</button>
           </form>
         </div>
@@ -176,6 +179,9 @@
       <div class="credit">
         <p> Copyright &copy; 2023 Ideku. All rights reserved </p>
       </div>
+      <div class="login">
+        <a href=".\admin\login.html">Login</a>
+      </div>
     </footer>
     <!-- Footer End -->
 
@@ -185,9 +191,6 @@
     </script>
 
     <!-- My JavaScript -->
-    <script src="js/script.js"></script>
-
-    <!-- Alert -->
-    <script src="dist/sweetalert2.all.min.js"></script>
+    <script src="./public/js/script.js"></script>
   </body>
 </html>
