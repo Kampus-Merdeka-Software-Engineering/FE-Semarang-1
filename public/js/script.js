@@ -46,7 +46,9 @@ btn.addEventListener('click', () => {
           .then((response) => response.json())
           .then((data) => {
             if (data.error == null) {
-              console.log(data);
+              document.getElementById('input-name').value = '';
+              document.getElementById('input-email').value = '';
+              document.getElementById('input-message').value = '';
             } else {
               console.error('Error sending data to the server:', data.error);
             }
@@ -54,7 +56,6 @@ btn.addEventListener('click', () => {
           .catch((error) => {
             console.error('Error sending data to the server:', error);
           });
-        // window.location.href = "https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/";
       }
   });
   }
