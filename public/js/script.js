@@ -14,6 +14,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
+//Ketika klik submit akan muncul alert
 const btn = document.getElementById('btn'); 
 
 btn.addEventListener('click', () => {

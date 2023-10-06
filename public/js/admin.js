@@ -1,8 +1,6 @@
 const hostUrl = "https://be-semarang-g-1-production.up.railway.app";
 const token = localStorage.getItem('token')
 
-///////////// PAGE DATA /////////////
-
 document.addEventListener('DOMContentLoaded', function() {
   const tableBody = document.getElementById('table-body-data');
   if (!token) {
@@ -85,7 +83,7 @@ function editButtonClick(postId) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data[0]);
+      
         document.getElementById("input_edit_data_id").value = data[0].data_id;
         document.getElementById("input_edit_name").value = data[0].name;
         document.getElementById("input_edit_email").value = data[0].email;
@@ -102,8 +100,6 @@ function editButtonClick(postId) {
   
 function submitEditButtonClick(postId, event) {
     event.preventDefault();
-    console.log(postId);
-    console.log(`${hostUrl}/api/admin/data/${postId}`);
     const updatedData = {
         name: document.getElementById('input_edit_name').value,
         email: document.getElementById('input_edit_email').value,
@@ -121,7 +117,6 @@ function submitEditButtonClick(postId, event) {
     })
         .then((response) => response.json())
         .then((data) => {
-        // console.log('Data updated:', data);
         // Navigate ke seluruh data setelah berhasil update
         window.location.href = 'https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/data.html';
         })
