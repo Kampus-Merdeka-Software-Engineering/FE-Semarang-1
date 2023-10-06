@@ -1,8 +1,6 @@
 const hostUrl = "https://be-semarang-g-1-production.up.railway.app";
 const token = localStorage.getItem('token');
 
-///////////// PAGE LOGIN /////////////
-
 function submitLogin(event) {
     event.preventDefault();
   
