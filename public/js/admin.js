@@ -55,6 +55,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }    
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const logoutButton = document.getElementById('logout-button');
+
+  logoutButton.addEventListener('click', function() {
+    // Hapus token dari local storage
+    localStorage.removeItem('token'); 
+
+    // Redirect ke halaman login
+    window.location.href = 'https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/login.html';
+  });
+});
 
 function editButtonClick(postId) {
   // Get modal
