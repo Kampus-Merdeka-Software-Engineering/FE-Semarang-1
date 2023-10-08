@@ -1,5 +1,6 @@
 const hostUrl = "https://be-semarang-g-1-production.up.railway.app";
 const token = localStorage.getItem('token');
+const username = localStorage.getItem('username');
 
 function submitLogin(event) {
     event.preventDefault();
@@ -22,8 +23,9 @@ function submitLogin(event) {
         .then((data) => {
         if (data.success) {
             const token = data.token; //token from server
+            const username = data.username; // Nama pengguna dari server
             localStorage.setItem('token', token); // save to local storage
-            document.cookie = `token=${token}`
+            localStorage.setItem('username', username);
             window.location.href = 'https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/data.html';
         } else {
             alert('Login gagal. Periksa kembali username dan password Anda.');

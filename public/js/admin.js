@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
+        const username = localStorage.getItem('username');
+        const welcomeMessage = document.getElementById('welcome-message');
+        welcomeMessage.textContent = `Hello, ${username}`;
+
         const messages = data.messages;
 
         messages.forEach((message) => {
