@@ -1,11 +1,12 @@
 #username-logout {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .logout-button {
-  width: 12%;
-  height: 25px;
+  width: 8%;
+  height: 30px;
   font-size: 14px;
   border: 1px solid;
   background: #dc3545;
@@ -14,10 +15,15 @@
   font-weight: 500;
   cursor: pointer;
   outline: none;
-  display: block;
-  margin-right: 0;
-  margin-left: auto;
   margin-top: 10px;
+  margin-right: 5%;
+}
+
+#welcome-message {
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 15px;
+  padding-top: 10px;
 }
 
 td,
