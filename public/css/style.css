@@ -386,7 +386,7 @@ body {
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 1366px) {
+@media (max-width: 1920px) {
   html {
     font-size: 85%;
   }
