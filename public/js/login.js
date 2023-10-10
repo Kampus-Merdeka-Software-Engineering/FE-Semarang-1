@@ -28,7 +28,7 @@ function submitLogin(event) {
             localStorage.setItem('username', username);
             window.location.href = 'https://kampus-merdeka-software-engineering.github.io/FE-Semarang-1/admin/data.html';
         } else {
-            alert('Login gagal. Periksa kembali username dan password Anda.');
+            alert('Login gagal. Periksa kembali username, email, dan password Anda.');
         }
         })
         .catch((error) => {
